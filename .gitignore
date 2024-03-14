@@ -1,0 +1,24 @@
+# Dependency directories
+node_modules/
+.package-lock.json
+.yarn-lock
+
+# Optional: macOS system files
+.DS_Store
+
+# Optional: IDE-specific files
+.idea/
+.vscode/
+
+# Build output directories
+/build/
+/dist/
+
+# Optional: Log files
+*.log
+
+# Environment files
+.env
+
+# Ios Pod files
+packages/MyApp/ios/Pods
