@@ -22,3 +22,16 @@ node_modules/
 
 # Ios Pod files
 packages/MyApp/ios/Pods
+# Android/IntelliJ
+#
+packages/MyApp/androidapp/build/*
+.idea
+.gradle
+local.properties
+*.iml
+*.hprof
+.cxx/
+*.keystore
+*.apk
+*.aab
+!debug.keystore

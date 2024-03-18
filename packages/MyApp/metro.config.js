@@ -22,6 +22,7 @@ const extraConfig = {
   // Additional folders to be watched by the Metro bundler
   watchFolders: [
     path.resolve(__dirname, '../shared'), // Adjust this path to where your shared folder is located relative to this config file
+    path.resolve(__dirname, '../../node_modules'),
   ],
 };
 
