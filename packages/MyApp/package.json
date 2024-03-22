@@ -4,14 +4,16 @@
   "private": true,
   "scripts": {
     "android": "npx react-native run-android",
-    "ios": "npx react-native run-ios",
+    "ios": "npx react-native run-ios --simulator='iPhone 15 Pro'",
     "lint": "eslint .",
     "start": "react-native start",
-    "test": "jest"
+    "test": "jest",
+    "pods": "cd ios && pod install && cd .."
   },
   "dependencies": {
     "react": "18.2.0",
-    "react-native": "0.73.5"
+    "react-native": "0.73.5",
+    "shared": "1.0.0"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",

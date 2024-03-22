@@ -1,8 +1,7 @@
-import logo from './logo.svg';
+//import { ranNumber } from '@monorepo/shared';
 import './App.css';
-import {ranNumber} from '@monorepo/shared';
-
-
+import logo from './logo.svg';
+import {msg, ranNumber, SharedButton} from '@monorepo/shared'
 function App() {
   return (
     <div className="App">
@@ -19,6 +18,7 @@ function App() {
         >
           Learn React
         </a>
+        
       </header>
     </div>
   );
