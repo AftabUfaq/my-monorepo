@@ -4,7 +4,11 @@ import { config } from "@gluestack-ui/config";
 export const SharedButton = () => {
   return (
     <GluestackUIProvider config={config}>
-      <Button>
+      <Button
+        onPress={() => {
+          console.log("ffd");
+        }}
+      >
         <ButtonText>Hello world</ButtonText>
       </Button>
     </GluestackUIProvider>
