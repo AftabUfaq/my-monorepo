@@ -7,8 +7,8 @@
     "nohoist": [
       "**/react-native",
       "**/react-native/**",
-      "**/@monorepo/shared",
-      "**/@monorepo/shared/**"
+      "**/shared",
+      "**/shared/**"
     ]
   },
   "scripts": {
@@ -19,8 +19,8 @@
     "mobile-pods": "yarn workspace myapp pods",
     "mobile-ios": "yarn workspace myapp ios",
     "mobile-android": "yarn workspace myapp android",
-    "shared-build": "yarn workspace @monorepo/shared build",
-    "shared-nodeModules": "yarn workspace @monorepo/shared install"
+    "shared-build": "yarn workspace shared build",
+    "shared-nodeModules": "yarn workspace shared install"
   },
   "devDependencies": {
     "typescript": "^5.3.3",

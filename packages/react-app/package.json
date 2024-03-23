@@ -3,21 +3,26 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@monorepo/shared": "^1.0.0",
+    "@gluestack-style/react": "^1.0.52",
+    "@gluestack-ui/config": "^1.1.18",
+    "@gluestack-ui/themed": "^1.1.17",
+    "@gluestack/ui-next-adapter": "^2.1.11",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-native-svg": "13.4.0",
+    "react-native-web": "^0.19.10",
     "react-scripts": "5.0.1",
     "shared": "1.0.0",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "start": "GLUESTACK_STYLE_TARGET=native react-scripts start",
+    "build": "GLUESTACK_STYLE_TARGET=native react-scripts build",
+    "test": "GLUESTACK_STYLE_TARGET=native react-scripts test",
+    "eject": "GLUESTACK_STYLE_TARGET=native react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
