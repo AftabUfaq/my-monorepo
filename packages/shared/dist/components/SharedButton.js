@@ -9,7 +9,9 @@ const themed_1 = require("@gluestack-ui/themed");
 const config_1 = require("@gluestack-ui/config");
 const SharedButton = () => {
     return (react_1.default.createElement(themed_1.GluestackUIProvider, { config: config_1.config },
-        react_1.default.createElement(themed_1.Button, null,
+        react_1.default.createElement(themed_1.Button, { onPress: () => {
+                console.log("ffd");
+            } },
             react_1.default.createElement(themed_1.ButtonText, null, "Hello world"))));
 };
 exports.SharedButton = SharedButton;
