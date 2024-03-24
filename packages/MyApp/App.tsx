@@ -9,13 +9,8 @@ import {
   View,
 } from 'react-native';
 
-import {
-  Colors,
-  Header
-} from 'react-native/Libraries/NewAppScreen';
-import {msg, ranNumber, SharedButton} from 'shared'
-
-
+import {Colors} from 'react-native/Libraries/NewAppScreen';
+import {ranNumber, SharedButton} from 'shared';
 
 function App(): React.JSX.Element {
   const isDarkMode = useColorScheme() === 'dark';
@@ -33,14 +28,13 @@ function App(): React.JSX.Element {
       <ScrollView
         contentInsetAdjustmentBehavior="automatic"
         style={backgroundStyle}>
-        <Header />
-        <Text>{ranNumber}</Text>
+        <Text>{ranNumber} ranNumber</Text>
         <View
           style={{
             backgroundColor: isDarkMode ? Colors.black : Colors.white,
           }}>
-         
-        <SharedButton />
+          <SharedButton />
+          <SharedButton />
         </View>
       </ScrollView>
     </SafeAreaView>
